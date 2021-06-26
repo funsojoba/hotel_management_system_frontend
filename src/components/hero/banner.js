@@ -30,19 +30,18 @@ const BannerStyle = styled.div`
 }
 `
 
-const Banner = () => {
+const Banner = ({title, description, background}) => {
     return (
     <BannerStyle
-        background="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+        background={background}
     >
         <NavBar/>
 
         <Title>
-            Welcome to Royalty
+            {title}
         </Title>
         <Desc>
-            Welcome to Regium Hotel and Suite,
-            the Kingdom of hospitality
+            {description}
         </Desc>
     </BannerStyle>)
 }

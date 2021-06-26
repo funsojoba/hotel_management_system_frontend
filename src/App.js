@@ -1,14 +1,15 @@
 import './App.css';
 
-import Banner from './components/hero/banner';
-import Card from './components/rooms/card';
+
+import SingleRoom from './components/rooms/allRooms';
+import HomePage from './components/Home';
 
 
 function App() {
   return (
     <div className="main">
-      <Banner></Banner>
-      <Card/>
+      <SingleRoom />
+      <HomePage />
     </div>
   );
 }

@@ -26,12 +26,10 @@ const ULStyle = styled.div`
 
     @media only screen and (max-width:850px){
         display:${props => props.active ? 'flex' : 'none'};
-        position: fixed;
         flex-direction: column;
         text-align:right;
-        right:35px;
         transition: all 300ms ease-in;
-
+        margin-top: 50px;
     }
 `
 
@@ -46,6 +44,8 @@ const BarsStyle = styled.div`
     color:#eee;
     cursor: pointer;
     transition: all 100ms ease-in;
+    position: absolute;
+    right: 10px;
 
     &:hover{
         transform: scale(1.1);
