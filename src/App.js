@@ -1,10 +1,11 @@
 import './App.css';
-import RegisterForm from './components/register';
+
+import Banner from './components/hero/banner';
 
 function App() {
   return (
     <div className="main">
-      <RegisterForm />
+      <Banner></Banner>
     </div>
   );
 }
