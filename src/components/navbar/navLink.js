@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
+
+const NavWrapper = styled.div`
+    position: relative;
+`
 
 const StyledLink = styled.a`
     display:inline-block;
@@ -18,40 +22,61 @@ const StyledLink = styled.a`
 
 const ULStyle = styled.div`
     display: flex;
+    transition: all 300ms ease-in;
+
+    @media only screen and (max-width:850px){
+        display:${props => props.active ? 'flex' : 'none'};
+        position: fixed;
+        flex-direction: column;
+        text-align:right;
+        right:35px;
+        transition: all 300ms ease-in;
+
+    }
 `
 
 const BarsStyle = styled.div`
-    width:60px;
-    height: 60px;
+    width:50px;
+    height: 50px;
     border-radius: 50%;
-    background:#fff;
-    border:solid 1px #979797;
+    border:solid 2px #fff;
     display: none;
     justify-content: center;
     align-items: center;
-    color:#979797;
+    color:#eee;
     cursor: pointer;
     transition: all 100ms ease-in;
 
     &:hover{
         transform: scale(1.1);
     }
+
+    @media only screen and (max-width:850px){
+        display:flex;
+    }
 `
 
 
 
 const NavLinks = () => {
+
+    const [active, setActive] = useState(false)
+
+    const handleToggle = ()=>{
+        setActive(!active)
+    }
+
     return (
-        <div>
-            <BarsStyle>
-                <i class="fas fa-bars fa-2x"></i>
+        <NavWrapper>
+            <BarsStyle onClick={handleToggle}>
+                <i class="fas fa-bars fa-lg"></i>
             </BarsStyle>
-            <ULStyle>
+            <ULStyle active={active}>
                 <StyledLink href="/">Home</StyledLink>
                 <StyledLink href="/rooms">Rooms</StyledLink>
                 <StyledLink href="/account">Account</StyledLink>
             </ULStyle>
-        </div>
+        </NavWrapper>
     )
 }
 
