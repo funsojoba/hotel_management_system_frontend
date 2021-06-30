@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 const NavWrapper = styled.div`
     position: relative;
 `
 
-const StyledLink = styled.a`
+const StyledLink = styled.span`
     display:inline-block;
     padding:5px 10px;
     color:#fff;
@@ -17,7 +18,6 @@ const StyledLink = styled.a`
     &:hover{
         transform: scale(1.1);
     }
-
 `
 
 const ULStyle = styled.div`
@@ -72,9 +72,9 @@ const NavLinks = () => {
                 <i class="fas fa-bars fa-lg"></i>
             </BarsStyle>
             <ULStyle active={active}>
-                <StyledLink href="/">Home</StyledLink>
-                <StyledLink href="/rooms">Rooms</StyledLink>
-                <StyledLink href="/account">Account</StyledLink>
+                <StyledLink> <Link to="/">Home</Link> </StyledLink>
+                <StyledLink> <Link to="/rooms">Rooms</Link></StyledLink>
+                <StyledLink> <Link to="/account">Account</Link></StyledLink>
             </ULStyle>
         </NavWrapper>
     )

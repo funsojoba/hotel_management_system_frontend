@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import NavImage from './navImage'
 import NavLinks from './navLink'
+import Logo from '../logo'
 
 
 const NavStyle = styled.div`
@@ -18,7 +18,8 @@ const NavStyle = styled.div`
 const NavBar = ()=>{
     return(
         <NavStyle>
-            <NavImage></NavImage>
+            <Logo />
+           
             <NavLinks></NavLinks>
         </NavStyle>
     )

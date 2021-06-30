@@ -30,14 +30,14 @@ const BannerStyle = styled.div`
 }
 `
 
-const Banner = ({title, description, background}) => {
+const Banner = ({title, description, background, titleAlign}) => {
     return (
     <BannerStyle
         background={background}
     >
         <NavBar/>
 
-        <Title>
+        <Title textAlign={titleAlign}>
             {title}
         </Title>
         <Desc>

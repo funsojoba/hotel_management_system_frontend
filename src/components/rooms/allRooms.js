@@ -7,7 +7,9 @@ import Banner from '../hero/banner'
 
 const SingleRoom = ()=>{
     return(
-        <Banner title="Welcome to the world of comfort" />
+        <Banner title="Welcome to the world of comfort" 
+            titleAlign="left"
+        />
     )
 }
 

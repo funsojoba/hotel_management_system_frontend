@@ -21,3 +21,8 @@ body{
       padding:20px;
     }
 }
+
+a{
+  color: #c7e0ff;
+  text-decoration: none;
+}
