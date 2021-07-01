@@ -5,7 +5,7 @@ import Button from '../../forms/button'
 import Rating from './rating'
 
 const DetailWrapper = styled.div`
-    height: 25%;
+    height: 30%;
     padding:10px;
     box-sizing:border-box;
     display: flex;
@@ -16,6 +16,7 @@ const DetailWrapper = styled.div`
 const TextWrapper = styled.div`
     display:flex;
     justify-content: space-between;
+    padding: 10px;
 `
 
 const Detail = ({roomName, handleClick, rating})=>{

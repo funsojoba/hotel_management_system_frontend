@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Logo from '../logo'
-import Icon from './ft-icon'
 
 
 const TnCWrapper = styled.div`
@@ -9,9 +7,12 @@ const TnCWrapper = styled.div`
 `
 
 const LinkDiv = styled.a`
+  font-family: 'Poppins', sans-serif;
     color:#fff;
     text-decoration: none;
     transition: all 300ms ease;
+    display:block;
+    padding:5px;
     &:hover{
         text-decoration: underline;
     }

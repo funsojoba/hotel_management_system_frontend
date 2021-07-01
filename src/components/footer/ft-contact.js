@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 const H5Div = styled.h4`
     margin-bottom: 20px;
     color:#fff;
+    font-family: 'Poppins', sans-serif;
 `
 
 const ContactWrapper = styled.div`
@@ -15,6 +16,7 @@ const ContactWrapper = styled.div`
 
 const Paragraph = styled.p`
     color:#fff;
+    line-height: 1.4em;
 `
 
 

@@ -11,6 +11,8 @@ const IconStyle = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
+    color:#fff;
+    cursor: pointer;
 `
 
 const Icon = ({background, children})=>{

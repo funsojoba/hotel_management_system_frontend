@@ -16,6 +16,8 @@ const IconWrapper = styled.div`
 const Paragraph = styled.p`
     margin-top:15px;
     color:#fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3em;
 `
 
 const FtAbout = () => {

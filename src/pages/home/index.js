@@ -4,6 +4,9 @@ import Glass from '../../components/glass'
 
 import styled from 'styled-components';
 import Footer from '../../components/footer';
+import SectionTwo from '../../components/sectionTwo';
+import SectionThree from '../../components/sectionThree';
+import SectionFour from '../../components/sectionFour';
 
 const GlassWrapper = styled.div`
         margin-top: -50px;
@@ -22,6 +25,9 @@ const Home = () => {
         <GlassWrapper>
             <Glass />
         </GlassWrapper>
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
         <Footer />
     </>
 }

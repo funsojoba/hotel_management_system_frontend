@@ -1,24 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-const Pstyle = styled.p`
+const H4Style = styled.h4`
     font-size:${props => props.fontSize ? props.fontSize : '2rem'};
     font-family: 'Montserrat', sans-serif;
-    color:${props => props.color ? props.color : "#fff"};
+    color:${props => props.color ? props.color : "#000"};
+    z-index: 10;
     text-align:${props => props.textAlign ? props.textAlign : 'center'};
-
     @media only screen and (max-width:850px){
         font-size: 1rem;
     }
 `
 
-const P = ({ children, textAlign, color, fontSize }) => {
-    return <Pstyle 
+
+const H4 = ({ children, textAlign, fontSize, }) => {
+    return <H4Style
         textAlign={textAlign}
-        color={color}
         fontSize={fontSize}
-        >{children}</Pstyle>
+    >
+        {children}</H4Style>
 }
 
-export default P
+export default H4
