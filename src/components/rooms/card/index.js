@@ -18,9 +18,9 @@ const CardWrapper = styled.div`
 `
 
 
-const Card = ({roomName, rating})=>{
+const Card = ({roomName, rating, background})=>{
     return (<CardWrapper>
-        <CardImage />
+        <CardImage background={background} />
         <Detail roomName={roomName} rating={rating}/>
     </CardWrapper>)
 }

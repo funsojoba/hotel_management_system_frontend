@@ -7,6 +7,8 @@ import Img from "../img";
 const SecTwoStyle = styled.div`
     display: flex;
     padding:30px;
+    justify-content:center;
+    align-items:center;
     flex-wrap: wrap;
     @media only screen and (max-width:800px){
         flex-direction: column;
@@ -16,7 +18,7 @@ const SecTwoStyle = styled.div`
 const SectionTwo = ()=>{
     return <SecTwoStyle>
         <ImgWrapper>
-            <Img src="https://res.cloudinary.com/ddl2pf4qh/image/upload/v1625100892/hms_files/Group_142_uuvl0v.png" />;
+            <Img src="https://res.cloudinary.com/ddl2pf4qh/image/upload/v1625100892/hms_files/Group_142_uuvl0v.png" />
         </ImgWrapper>
         <Text />
     </SecTwoStyle>

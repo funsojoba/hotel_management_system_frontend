@@ -20,20 +20,20 @@ const CardWrapper = styled.div`
 const SectCard = () => {
     return <SecWrapper>
         <CardWrapper>
-            <Card roomName="Levante" rating="4.9" />
+            <Card background="https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" roomName="Levante" rating="4.9" />
         </CardWrapper>
 
         <CardWrapper>
-            <Card roomName="Lexur" rating="4.6" />
+            <Card background="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" roomName="Lexur" rating="4.6" />
         </CardWrapper>
-       
-       <CardWrapper>
-            <Card roomName="Deluxa" rating="5.0" />
-       </CardWrapper>
 
-       <CardWrapper>
+        <CardWrapper>
+            <Card background="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjByb29tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" roomName="Deluxa" rating="5.0" />
+        </CardWrapper>
+
+        <CardWrapper>
             <Card roomName="Magnifea" rating="4.9" />
-       </CardWrapper>
+        </CardWrapper>
     </SecWrapper>
 }
 

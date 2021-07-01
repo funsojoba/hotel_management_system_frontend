@@ -4,7 +4,7 @@ import GlassSelect from './glassSelect'
 
 import GlassBtn from './glassBtn'
 import GlassInput from './glassInput'
-import H1 from '../typography/h1'
+import H4 from '../typography/h4'
 
 
 const FormContainerDiv = styled.div`
@@ -18,9 +18,9 @@ const FormContainerDiv = styled.div`
 
 const SelectContainer = ({ title, inputType }) => {
     return <FormContainerDiv>
-        <H1 fontSize="1.4em" textAlign="left">{title}</H1>
+        <H4 fontSize="1.4em" textAlign="left">{title}</H4>
         <GlassSelect></GlassSelect>
-    </FormContainerDiv >
+    </FormContainerDiv>
 }
 
 export default SelectContainer
