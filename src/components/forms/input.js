@@ -12,13 +12,14 @@ const InputStyle = styled.input`
     margin-bottom: 30px;
 `
 
-const Input =({handleChange, placeholder, type, background, value})=>{
+const Input =({handleChange, placeholder, type, background, value, name})=>{
     return <InputStyle 
                 onChange={handleChange} 
                 placeholder={placeholder}
                 type={type}
                 white={background}
                 value={value}
+                name={name}
             />
 }
 

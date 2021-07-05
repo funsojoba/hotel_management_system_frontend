@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './pages/home';
 import Rooms from './pages/rooms';
+import Register from './pages/register';
 
 
 import {
@@ -22,6 +23,10 @@ function App() {
 
             <Route path="/rooms">
               <Rooms></Rooms>
+            </Route>
+           
+            <Route path="/signup">
+              <Register></Register>
             </Route>
 
             

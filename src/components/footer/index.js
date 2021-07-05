@@ -12,6 +12,10 @@ const FooterDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     border-radius: 50px;
+    
+    @media only screen and (max-width:600px){
+       padding:25px;
+    }
 
 `
 
