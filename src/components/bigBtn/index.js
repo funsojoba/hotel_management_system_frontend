@@ -12,6 +12,7 @@ const BigBtnStyle = styled.button`
     border-radius: 50px;
     cursor: pointer;
     transition: all 300ms ease;
+    width: ${props =>props.width ? props.width : "auto"};
     
     &:hover{
         transform: translateY(-5px);
@@ -20,8 +21,12 @@ const BigBtnStyle = styled.button`
 
 `
 
-const BigBtn = ({onClick, type, children})=>{
-    return <BigBtnStyle onClick={onClick} type={type}>
+const BigBtn = ({onClick, type, children, width})=>{
+    return <BigBtnStyle 
+                onClick={onClick} 
+                type={type}
+                width={width}
+                >
         {children}
     </BigBtnStyle>
 }

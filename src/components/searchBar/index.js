@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Input from '../forms/input'
+import Select from '../selectInput'
 
 const SearchDiv = styled.div`
     background: #051D40;
@@ -10,19 +10,24 @@ const SearchDiv = styled.div`
     align-items: center;
     color:#fff;
     margin-top:30px;
-    margin-bottom: 30px;
 `
 
 const TextDiv = styled.div`
     color:#EDF5FF;
     flex:3;
+    @media only screen and (max-width:600px){
+        display:none;
+    }
 `
 const SearchSection = styled.div`
     flex:1;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position:relative
+    position:relative;
+     @media only screen and (max-width:600px){
+        width: 100%;
+    }
 `
 
 const InputDiv = styled.input`
@@ -43,8 +48,9 @@ const Icon = styled.div`
 const SearchBar = () => {
     return <SearchDiv>
         <TextDiv>
-            <p>lrem ipsum</p>
+            <Select />
         </TextDiv>
+
         <SearchSection>
             <Icon><i className="fas fa-search fa-lg"></i></Icon>
             <InputDiv type="search" placeholder="search" />
