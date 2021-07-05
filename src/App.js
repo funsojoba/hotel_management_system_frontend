@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/home';
 import Rooms from './pages/rooms';
 import Register from './pages/register';
+import Login from './pages/login';
 
 
 import {
@@ -27,6 +28,10 @@ function App() {
            
             <Route path="/signup">
               <Register></Register>
+            </Route>
+            
+            <Route path="/login">
+              <Login></Login>
             </Route>
 
             
