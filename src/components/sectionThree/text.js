@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import H4 from "../typography/h4";
 import P from "../typography/p";
-import BigBtn from "../bigBtn";
+import MyLink from "../forms/myLink";
 import NumTag from "./numTag";
 
 
@@ -50,7 +50,9 @@ const Text = ()=>{
         <P textAlign="left" fontSize="1em" color="#051D40" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel labore adipisci dolores saepe officia similique sint, maxime ducimus cumque amet. Harum assumenda modi atque ullam sed. Quo, odio nihil?
         </P>
         <BtnWrapper>
-            <BigBtn>EXPLORE</BigBtn>
+            <MyLink>
+                EXPLORE
+            </MyLink>
         </BtnWrapper>
     </TextWrapper>
 }

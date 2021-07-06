@@ -2,6 +2,7 @@ import styled from "styled-components";
 import H1 from "../typography/h1";
 import P from "../typography/p";
 import BigBtn from "../bigBtn";
+import MyLink from "../forms/myLink";
 
 const TextWrapper = styled.div`
     padding:50px;
@@ -25,7 +26,7 @@ const Text = ()=>{
         <P textAlign="left" fontSize="1em" color="#051D40" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odio vitae porro dolorum, deserunt dignissimos ipsum voluptates! Tempora, officiis impedit vel mollitia iusto, magni fuga numquam architecto reiciendis sed ullam.</P>
         <br />
         <BtnWrapper>
-            <BigBtn>EXPLORE</BigBtn>
+            <MyLink>EXPLORE</MyLink>
         </BtnWrapper>
     </TextWrapper>
 }

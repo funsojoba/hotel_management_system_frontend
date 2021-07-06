@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Button from '../../forms/button'
 import Rating from './rating'
+import MyLink from '../../forms/myLink'
+import CardLink from './cardLink'
 
 const DetailWrapper = styled.div`
     height: 30%;
@@ -19,7 +20,7 @@ const TextWrapper = styled.div`
     padding: 10px;
 `
 
-const Detail = ({roomName, handleClick, rating})=>{
+const Detail = ({roomName, href, rating})=>{
     return(
         <DetailWrapper>
             <TextWrapper>
@@ -29,9 +30,7 @@ const Detail = ({roomName, handleClick, rating})=>{
                 <Rating rating={rating}/>
             </TextWrapper>
 
-            <Button handleClick={handleClick}>
-                Book Room
-            </Button>
+            <CardLink href={href}>Book Room</CardLink>
         </DetailWrapper>
     )
 }
