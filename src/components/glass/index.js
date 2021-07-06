@@ -15,7 +15,6 @@ const GlassStyle = styled.div`
     margin-left: auto;
     margin-right: auto;
     box-shadow: 1px 5px 30px rgba(0,0,0,.2);
-    backdrop-filter: blur(150px);
     display:flex;
 
     @media only screen and (max-width:856px){

@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Rooms from './pages/rooms';
 import Register from './pages/register';
 import Login from './pages/login';
+import SingleRoom from './pages/singleRoom';
 
 
 import {
@@ -32,6 +33,10 @@ function App() {
             
             <Route path="/login">
               <Login></Login>
+            </Route>
+
+            <Route path="/room">
+              <SingleRoom></SingleRoom>
             </Route>
 
             
