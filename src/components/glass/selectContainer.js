@@ -14,6 +14,11 @@ const FormContainerDiv = styled.div`
     justify-content: center;
     align-items: center;
     padding:10px;
+
+    @media only screen and (max-width:650px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `
 
 const SelectContainer = ({ title, inputType }) => {

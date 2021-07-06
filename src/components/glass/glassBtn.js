@@ -10,8 +10,8 @@ const GlassBtnStyle = styled.button`
     border:none;
     transition:300ms;
     color:#FFDA7C;
+    border:solid 1px #051D40;
     &:hover{
-        border:solid 1px #051D40;
         background:#fff;
         color:#051D40;
     }

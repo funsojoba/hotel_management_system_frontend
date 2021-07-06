@@ -11,6 +11,11 @@ const FormContainerDiv = styled.div`
     flex-direction: column;
     padding:10px;
     justify-content: flex-end;
+    @media only screen and (max-width:650px){
+        flex-direction: row;
+        border-bottom: 1px solid #888;
+        justify-content: space-between;
+    }
 `
 
 const FormContainer = ({title, inputType})=>{

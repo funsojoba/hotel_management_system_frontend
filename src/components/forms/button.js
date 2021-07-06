@@ -16,7 +16,6 @@ const ButtonStyle = styled.button`
         box-shadow: 0 5px 30px inherit;
         transform: translateY(-5px);
     }
-
 `
 
 
